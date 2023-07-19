@@ -10,7 +10,7 @@ const count = ref(0)
 
 <template>
   <div class="relative w-full overflow-hidden">
-  <img src="src/assets/images/cine.jpg" alt="Your Image" class="w-full h-full object-cover" />
+  <img src="/src/assets/images/cine.jpg" alt="Your Image" class="w-full h-full object-cover" />
   <div class="absolute bottom-0 w-full h-full bg-gradient-to-t"></div>
 </div>
   <main>
@@ -24,7 +24,7 @@ const count = ref(0)
            
           </div>
         </div>
-        <img src="src/assets/images/comida.png" alt="Product screenshot" class="  md:-ml-4 lg:-ml-0" />
+        <img src="/src/assets/images/comida.png" alt="Product screenshot" class="  md:-ml-4 lg:-ml-0" />
       </div>
     </div>
   </div>

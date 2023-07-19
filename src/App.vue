@@ -19,7 +19,7 @@ const mobileMenuOpen = ref(false)
         <div class="lg:absolute lg:flex lg:flex-1">
           <a href="" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Logo</span>
-            <img class="h-8 w-auto" src="src/assets/images/logo.png" alt="" />
+            <img class="h-8 w-auto" src="/src/assets/images/logo.png" alt="" />
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -39,7 +39,7 @@ const mobileMenuOpen = ref(false)
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto" src="src/assets/images/logo.png" alt="" />
+              <img class="h-8 w-auto" src="/src/assets/images/logo.png" alt="" />
             </a>
             <button type="button" class="-m-2.5 rounded-md p-2.5 " @click="mobileMenuOpen = false">
               <span class="sr-only">Close menu</span>
