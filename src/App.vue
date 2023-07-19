@@ -6,8 +6,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import HelloWorld from './components/HelloWorld.vue';
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Catalogo', href: '/catalog' },
+  { name: 'Home', href: '/movies-platform/' },
+  { name: 'Catalogo', href: '/movies-platform/catalog' },
   { name: 'Proximamente', href: '#' },
 ]
 
