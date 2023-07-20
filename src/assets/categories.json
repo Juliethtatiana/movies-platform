@@ -1,14 +1,14 @@
 [
-    {
-        "code":1,
-        "name":"thriller"
-    },
-    {
-        "code":2,
-        "name":"supenso"
-    },
-    {
-        "code":3,
-        "name":"terror"
-    }
-]
+		{
+			"code":1,
+			"name":"thriller"
+		},
+		{
+			"code":2,
+			"name":"supenso"
+		},
+		{
+			"code":3,
+			"name":"terror"
+		}
+	]

@@ -3,9 +3,10 @@ import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import movieData from './assets/movies.json'
 
 
-
+localStorage.setItem("data",JSON.stringify(movieData) )
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Catalogo', href: '/catalog' },
@@ -16,7 +17,7 @@ const mobileMenuOpen = ref(false)
 </script>
 <template>
     <header class="py-2 shadow-lg inset-x-0 top-0 z-50 bg-gray-300 dark:bg-slate-800">
-      <nav class="md:flex md:justify-between lg:block p-6 lg:px-8" aria-label="Global">
+      <nav class="flex justify-between lg:block lg:py-6 px-6 lg:px-8" aria-label="Global">
         <div class="lg:absolute lg:flex lg:flex-1">
           <a href="" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Logo</span>
