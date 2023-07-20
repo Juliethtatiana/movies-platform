@@ -47,9 +47,7 @@ const count = ref(0)
 
 
   </main>
-  <footer class="bg-gray-300 dark:bg-slate-900 px-2 py-6 mt-6">
-    <p>Made by WiinterDev </p>
-  </footer>
+ 
 </template>
 
 <style scoped>
