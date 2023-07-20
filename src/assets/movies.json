@@ -1,7 +1,7 @@
 [{
 	"id": 1,
 	"name": "The Shawshank Redemption",
-	"sinopsis":"",
+	"sinopsis":"Andrew Dufresne es un hombre inocente que es acusado del asesinato de su mujer. Tras ser condenado a cadena perpetua, es enviado a la cárcel de Shawshank, en Maine. Con el paso de los años, Andrew conseguirá ganarse la confianza del director del centro y el respeto de los otros convictos, especialmente de Red, el jefe de la mafia.",
 	"duracion":192,
 	"categories":[
 		{
@@ -16,11 +16,11 @@
 	"date":"12-03.2003",
 	"rating": 9.2,
 	"image": "shawnshank.jpg",
-	"trailer": "https://www.imdb.com/title/tt0111161/"
+	"trailer": "https://www.youtube.com/watch?v=NmzuHjWmXOc"
 }, {
 	"id": 2,
 	"name": "The Godfather",
-	"sinopsis":"",
+	"sinopsis":"América, años 40. Don Vito Corleone (Marlon Brando) es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York. Tiene cuatro hijos: Connie (Talia Shire), el impulsivo Sonny (James Caan), el pusilánime Fredo (John Cazale) y Michael (Al Pacino), que no quiere saber nada de los negocios de su padre. Cuando Corleone, en contra de los consejos de 'Il consigliere' Tom Hagen (Robert Duvall), se niega a participar en el negocio de las drogas, el jefe de otra banda ordena su asesinato. Empieza entonces una violenta y cruenta guerra entre las familias mafiosas. (FILMAFFINITY)",
 	"duracion":192,
 	"categories":[
 		{
@@ -39,11 +39,11 @@
 	"rating": 9.2,
 	"date":"12-03.2003",
 	"image": "godfather.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0068646/"
+	"trailer": "https://www.youtube.com/watch?v=UaVTIH8mujA"
 }, {
 	"id": 3,
 	"name": "The Dark Knight",
-	"sinopsis":"",
+	"sinopsis":"Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman mantiene a raya el crimen organizado en Gotham. Todo cambia cuando aparece el Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.",
 	"duracion":192,
 	"date":"12-03.2003",
 	"categories":[
@@ -62,11 +62,11 @@
 	],
 	"rating": 9,
 	"image": "dark.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0468569/"
+	"trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
 }, {
 	"id": 4,
 	"name": "Pulp Fiction",
-	"sinopsis":"",
+	"sinopsis":"La vida de un boxeador, dos sicarios, la esposa de un gánster y dos bandidos se entrelaza en una historia de violencia y redención.",
 	"duracion":192,
 	"categories":[
 		{
@@ -85,7 +85,7 @@
 	"rating": 8.9,
 	"date":"12-03.2003",
 	"image": "pulp.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0110912/"
+	"trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
 }, {
 	"id": 5,
 	"name": "The Lord of the Rings: The Return of the King",
@@ -108,11 +108,11 @@
 	"rating": 9,
 	"date":"12-03.2003",
 	"image": "lord.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0167260/"
+	"trailer": "https://www.youtube.com/watch?v=19nt1L8nLrA"
 }, {
 	"id": 6,
 	"name": "The Good, the Bad and the Ugly",
-	"sinopsis":"",
+	"sinopsis":"Tres hombres violentos pelean por una caja que alberga 200 000 dólares, la cual fue escondida durante la Guerra Civil. Dado que ninguno puede encontrar la tumba donde está el botín sin la ayuda de los otros dos, deben colaborar, pese a odiarse.",
 	"duracion":192,
 	"categories":[
 		{
@@ -131,11 +131,11 @@
 	"rating": 8.8,
 	"date":"12-03.2003",
 	"image": "good.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0060196/"
+	"trailer": "https://www.youtube.com/watch?v=exJOy6uTkek"
 }, {
 	"id": 7,
 	"name": "Fight Club",
-	"sinopsis":"",
+	"sinopsis":"Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organización crece y sus objetivos toman otro rumbo.",
 	"duracion":192,
 	"categories":[
 		{
@@ -154,11 +154,11 @@
 	"rating": 8.8,
 	"date":"12-03.2003",
 	"image": "club.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0137523/"
+	"trailer": "https://www.youtube.com/watch?v=YD5BeUWgsSM"
 }, {
 	"id": 8,
 	"name": "The Lord of the Rings: The Fellowship of the Ring",
-	"sinopsis":"",
+	"sinopsis":"En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo. Acompañado de sus amigos, Frodo emprende un viaje hacia Mordor, el único lugar donde el anillo puede ser destruido. Sin embargo, Sauron ordena la persecución del grupo para recuperar el anillo y acabar con la Tierra Media.",
 	"duracion":192,
 	"categories":[
 		{
@@ -177,11 +177,11 @@
 	"rating": 8.8,
 	"date":"12-03.2003",
 	"image": "fellow.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0120737/"
+	"trailer": "https://www.youtube.com/watch?v=3GJp6p_mgPo"
 }, {
 	"id": 9,
 	"name": "Forrest Gump",
-	"sinopsis":"",
+	"sinopsis":"Sentado en un banco en Savannah, Georgia, Forrest Gump espera al autobús. Mientras éste tarda en llegar, el joven cuenta su vida a las personas que se sientan a esperar con él. Aunque sufre un pequeño retraso mental, esto no le impide hacer cosas maravillosas. Sin entender del todo lo que sucede a su alrededor, Forrest toma partido en los eventos más importantes de la historia de los Estados Unidos.",
 	"duracion":192,
 	"categories":[
 		{
@@ -199,11 +199,11 @@
 	],
 	"rating": 8.8,
 	"image": "gump.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt0109830/"
+	"trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg"
 }, {
 	"id": 10,
 	"name": "Inception",
-	"sinopsis":"",
+	"sinopsis":"Dom Cobb (Leonardo DiCaprio) es un ladrón con una extraña habilidad para entrar a los sueños de la gente y robarle los secretos de sus subconscientes. Su habilidad lo ha convertido en un atractivo en el mundo del espionaje corporativo, pero ha tenido un gran costo en la gente que ama. Cobb tiene la oportunidad de ser perdonado cuando recibe una tarea imposible: plantar una idea en la mente de una persona. Si tiene éxito, será el crimen perfecto, pero un enemigo se anticipa a sus movimientos.",
 	"duracion":192,
 	"categories":[
 		{
@@ -221,5 +221,5 @@
 	],
 	"rating": 8.8,
 	"image": "inception.jpg",
-	"imdb_url": "https://www.imdb.com/title/tt1375666/"
+	"trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
 }]

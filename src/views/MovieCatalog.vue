@@ -3,8 +3,38 @@ import { ref } from 'vue'
 import MovieItem from '../components/MovieItem.vue';
 import movieData from '../assets/movies.json'
 import router from '../router'
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+import movieCategories from '../assets/categories.json'
+
+import {computed } from 'vue'
+import {
+  Combobox,
+  ComboboxInput,
+  ComboboxButton,
+  ComboboxOptions,
+  ComboboxOption,
+  TransitionRoot,
+} from '@headlessui/vue'
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/20/solid'
+
+
+
+let selected = ref(movieCategories)
+let query = ref('')
+
+let categoryList = computed(() =>
+  query.value === ''
+    ? movieCategories
+    : movieCategories.filter((category) =>
+        category.name
+          .toLowerCase()
+          .replace(/\s+/g, '')
+          .includes(query.value.toLowerCase().replace(/\s+/g, ''))
+      )
+)
+
+
+
+
 
 const filteredList=ref(movieData)
 
@@ -33,31 +63,74 @@ const detail= (idMovie) => {
 <div class="mx-10 p-4">
 
     <div class="flex my-4">
-        <Menu as="div" class="relative inline-block text-left">
-    <div class="h-full">
-      <MenuButton class="inline-flex w-full justify-center gap-x-1.5 rounded-m px-3 h-full text-sm font-semibold shadow-sm ring-1 ring-inset ">
-        Categorias
-        <ChevronDownIcon class="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
-      </MenuButton>
-    </div>
-
-    <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
-      <MenuItems class="absolute  z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-300 dark:bg-slate-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-        <div class="py-1">
-          <MenuItem v-slot="{ active }">
-            <a href="#" :class="[active ? 'bg-gray-100 ' : '', 'block px-4 py-2 text-sm']">Account settings</a>
-          </MenuItem>
-          <MenuItem v-slot="{ active }">
-            <a href="#" :class="[active ? 'bg-gray-100 ' : '', 'block px-4 py-2 text-sm']">Support</a>
-          </MenuItem>
-          <MenuItem v-slot="{ active }">
-            <a href="#" :class="[active ? 'bg-gray-100 ' : '', 'block px-4 py-2 text-sm']">License</a>
-          </MenuItem>
-          
+      <Combobox v-model="selected">
+      <div class="relative mt-1">
+        <div
+          class="relative w-full cursor-default overflow-hidden rounded-lg  text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm"
+        >
+          <ComboboxInput
+            class="w-full border-none py-2 pl-3 pr-10 text-sm leading-5  focus:ring-0"
+            :displayValue="(category) => category"
+            @change="query = $event.target.value"
+          />
+          <ComboboxButton
+            class="absolute inset-y-0 right-0 flex items-center pr-2"
+          >
+            <ChevronUpDownIcon
+              class="h-5 w-5 text-gray-400"
+              aria-hidden="true"
+            />
+          </ComboboxButton>
         </div>
-      </MenuItems>
-    </transition>
-  </Menu>
+        <TransitionRoot
+          leave="transition ease-in duration-100"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+          @after-leave="query = ''"
+        >
+          <ComboboxOptions
+            class="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+          >
+            <div
+              v-if="categoryList.length === 0 && query !== ''"
+              class="relative cursor-default select-none py-2 px-4 "
+            >
+              Nothing found.
+            </div>
+
+            <ComboboxOption
+              v-for="category in categoryList"
+              as="template"
+              :key="category.code"
+              :value="category.name"
+              v-slot="{ selected, active }"
+            >
+              <li
+                class="relative cursor-default select-none py-2 pl-10 pr-4"
+                :class="{
+                  'bg-teal-600 text-white': active,
+                  'text-gray-900': !active,
+                }"
+              >
+                <span
+                  class="block truncate"
+                  :class="{ 'font-medium': selected, 'font-normal': !selected }"
+                >
+                  {{ category.name }}
+                </span>
+                <span
+                  v-if="selected"
+                  class="absolute inset-y-0 left-0 flex items-center pl-3"
+                  :class="{ 'text-white': active, 'text-teal-600': !active }"
+                >
+                  <CheckIcon class="h-5 w-5" aria-hidden="true" />
+                </span>
+              </li>
+            </ComboboxOption>
+          </ComboboxOptions>
+        </TransitionRoot>
+      </div>
+    </Combobox>
         <div class="relative w-full">
             <input type="search" v-model="text" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search by name" required>
             <button @click="searchbyName(text)" class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

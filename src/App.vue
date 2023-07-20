@@ -8,7 +8,7 @@ import HelloWorld from './components/HelloWorld.vue';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Catalogo', href: '/catalog' },
-  { name: 'Proximamente', href: '#' },
+  { name: 'Crear Pelicula', href: '/create' },
 ]
 
 const mobileMenuOpen = ref(false)
