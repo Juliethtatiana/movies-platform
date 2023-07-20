@@ -24,8 +24,8 @@ const getImgURL = (imageName)=>{
   <div class="w-full h-full flex justify-center my-6">
     <div class="bg-gray-300 dark:bg-slate-700 p-4 rounded-lg h-full  w-[80%] grid lg:grid-cols-3 gap-4" >
         <img  :src="getImgURL(movie.image)" :alt=" movie.name" class="w-full rounded-lg shadow-lg">
-        <div class="p-4 lg:col-span-2">
-          <h2 class="text-lg font-bold ">{{movie.name}}</h2>
+        <div class="p-4 lg:col-span-2 flex flex-col gap-5">
+          <h2 class="text-2xl font-bold ">{{movie.name}}</h2>
           
           <div class="flex items-center">
               <svg v-for="star in Math.floor(movie.rating)" class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -34,15 +34,27 @@ const getImgURL = (imageName)=>{
               
               <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">{{ movie.rating }} out of 5</p>
           </div>
+          <div class="flex">
+            <div
+        v-for="category in movie.categories"
+        data-te-chip-init
+        data-te-ripple-init
+        class="w-fit my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-blue-400 px-[12px] py-0 text-[13px] font-normal normal-case leading-loose  shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none "
+        data-te-close="true">
+        {{ category.name }}
+      </div>
 
-          <p>{{ movie.sinopsis}}</p>
+          </div>
+               
+
+          <p class="text-lg text-justify">{{ movie.sinopsis}}</p>
         </div>
         <div class="lg:col-span-3">
           <h2 class="text-xl font-bold"> Trailer</h2>
           <div class="w-full flex justify-center mt-6">
             <iframe class="w-[80%] min-h-[400px] rounded-xl"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
+          :src="movie.trailer">
+          </iframe>
           </div>
         
         </div>
