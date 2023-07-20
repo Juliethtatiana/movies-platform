@@ -1,5 +1,5 @@
 # movies-platform
-movies platform made in vue js
+Vite app  with Vue JS and Tailwind CSS as a example of a movies platform
 
 Live Preview:  https://movieswiinter.netlify.app/
 
