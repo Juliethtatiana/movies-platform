@@ -40,7 +40,7 @@ const filteredList=ref(movieData)
 
 
 const searchbyName = (name)=>{
-    const regex = new RegExp(`\\b${name}\\b`);
+    const regex = new RegExp(`\\b${name.toLocaleLowerCase()}\\b`);
     if(name!=""){
         filteredList.value = movieData.filter((movie) => regex.test(movie.name.toLocaleLowerCase()) )
     }else{

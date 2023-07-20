@@ -13,7 +13,7 @@
 			"name":"supenso"
 		}
 	],
-	"date":"12-03.2003",
+	"date":"Fri Jun 03 2023 19:00:00 GMT-0500 (hora estándar de Colombia)",
 	"rating": 9.2,
 	"image": "shawnshank.jpg",
 	"trailer": "https://www.youtube.com/watch?v=NmzuHjWmXOc"
@@ -37,7 +37,7 @@
 		}
 	],
 	"rating": 9.2,
-	"date":"12-03.2003",
+	"date":"2023-07-2023",
 	"image": "godfather.jpg",
 	"trailer": "https://www.youtube.com/watch?v=UaVTIH8mujA"
 }, {
@@ -45,7 +45,7 @@
 	"name": "The Dark Knight",
 	"sinopsis":"Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman mantiene a raya el crimen organizado en Gotham. Todo cambia cuando aparece el Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.",
 	"duracion":192,
-	"date":"12-03.2003",
+	"date":"2023-07-2023",
 	"categories":[
 		{
 			"code":1,
@@ -83,7 +83,7 @@
 		}
 	],
 	"rating": 8.9,
-	"date":"12-03.2003",
+	"date":"2023-07-2023",
 	"image": "pulp.jpg",
 	"trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
 }, {
@@ -106,7 +106,7 @@
 		}
 	],
 	"rating": 9,
-	"date":"12-03.2003",
+	"date":"2023-07-2023",
 	"image": "lord.jpg",
 	"trailer": "https://www.youtube.com/watch?v=19nt1L8nLrA"
 }, {
@@ -129,7 +129,7 @@
 		}
 	],
 	"rating": 8.8,
-	"date":"12-03.2003",
+	"date":"2023-07-2023",
 	"image": "good.jpg",
 	"trailer": "https://www.youtube.com/watch?v=exJOy6uTkek"
 }, {
@@ -152,7 +152,7 @@
 		}
 	],
 	"rating": 8.8,
-	"date":"12-03.2003",
+	"date":"2023-07-2023",
 	"image": "club.jpg",
 	"trailer": "https://www.youtube.com/watch?v=YD5BeUWgsSM"
 }, {
@@ -175,7 +175,7 @@
 		}
 	],
 	"rating": 8.8,
-	"date":"12-03.2003",
+	"date":"2023-07-2023",
 	"image": "fellow.jpg",
 	"trailer": "https://www.youtube.com/watch?v=3GJp6p_mgPo"
 }, {
@@ -198,6 +198,7 @@
 		}
 	],
 	"rating": 8.8,
+	"date":"2023-07-2023",
 	"image": "gump.jpg",
 	"trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg"
 }, {
@@ -220,6 +221,55 @@
 		}
 	],
 	"rating": 8.8,
+	"date":"2023-07-2023",
 	"image": "inception.jpg",
+	"trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+}
+, {
+	"id": 11,
+	"name": "Barbie",
+	"sinopsis":"Dom Cobb (Leonardo DiCaprio) es un ladrón con una extraña habilidad para entrar a los sueños de la gente y robarle los secretos de sus subconscientes. Su habilidad lo ha convertido en un atractivo en el mundo del espionaje corporativo, pero ha tenido un gran costo en la gente que ama. Cobb tiene la oportunidad de ser perdonado cuando recibe una tarea imposible: plantar una idea en la mente de una persona. Si tiene éxito, será el crimen perfecto, pero un enemigo se anticipa a sus movimientos.",
+	"duracion":192,
+	"categories":[
+		{
+			"code":1,
+			"name":"thriller"
+		},
+		{
+			"code":2,
+			"name":"supenso"
+		},
+		{
+			"code":3,
+			"name":"terror"
+		}
+	],
+	"rating": 9.0,
+	"image": "barbie.jpg",
+	"date":"Fri Jul 20 2023 19:00:00 GMT-0500 (hora estándar de Colombia)",
+	"trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+},
+{
+	"id": 12,
+	"name": "OpenHeimer",
+	"sinopsis":"Dom Cobb (Leonardo DiCaprio) es un ladrón con una extraña habilidad para entrar a los sueños de la gente y robarle los secretos de sus subconscientes. Su habilidad lo ha convertido en un atractivo en el mundo del espionaje corporativo, pero ha tenido un gran costo en la gente que ama. Cobb tiene la oportunidad de ser perdonado cuando recibe una tarea imposible: plantar una idea en la mente de una persona. Si tiene éxito, será el crimen perfecto, pero un enemigo se anticipa a sus movimientos.",
+	"duracion":192,
+	"categories":[
+		{
+			"code":1,
+			"name":"thriller"
+		},
+		{
+			"code":2,
+			"name":"supenso"
+		},
+		{
+			"code":3,
+			"name":"terror"
+		}
+	],
+	"rating": 9.0,
+	"image": "open.jpg",
+	"date":"Fri Jul 20 2023 19:00:00 GMT-0500 (hora estándar de Colombia)",
 	"trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
 }]

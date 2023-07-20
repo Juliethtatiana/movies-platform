@@ -3,8 +3,6 @@ import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-import HelloWorld from './components/HelloWorld.vue';
-
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Catalogo', href: '/catalog' },
