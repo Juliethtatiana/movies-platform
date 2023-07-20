@@ -6,16 +6,31 @@ import movieData from '../assets/movies.json'
 import categoryList from '../assets/categories.json'
 import CheckCategory from '../components/CheckCategory.vue';
 
+let movies=localStorage.getItem("data")?JSON.parse(localStorage.getItem("data")):movieData
+
+
+
 const route = useRoute()
 const id=route.params.id
 
-const movie=movieData.find((movie) => movie.id == id);
 
-const getImgURL = (imageName)=>{
-  const imgUrl = new URL(`/src/assets/images/${imageName}`, import.meta.url).href
-  console.log(imgUrl)
-  return imgUrl
+let newMovie={
+  id: 11,
+	name: "Barbie",
+	sinopsis:"Dom Cobb (Leonardo DiCaprio) es un ladrón con una extraña habilidad para entrar a los sueños de la gente y robarle los secretos de sus subconscientes. Su habilidad lo ha convertido en un atractivo en el mundo del espionaje corporativo, pero ha tenido un gran costo en la gente que ama. Cobb tiene la oportunidad de ser perdonado cuando recibe una tarea imposible: plantar una idea en la mente de una persona. Si tiene éxito, será el crimen perfecto, pero un enemigo se anticipa a sus movimientos.",
+	duracion:192,
+	categories:[
+	],
+	rating: 9.0,
+	image: "barbie.jpg",
+	date:"Fri Jul 20 2023 19:00:00 GMT-0500 (hora estándar de Colombia)",
+	trailer: "https://www.youtube.com/watch?v=YoHD9XEInc0"
+}
 
+const addMovie=()=>{
+  movies.push(newMovie)
+  localStorage.setItem("data",JSON.stringify(movies))
+  alert("addMovie")
 }
 </script>
 
@@ -72,14 +87,15 @@ const getImgURL = (imageName)=>{
       
     
   </div>
-<div class="col-span-2 flex justify-center m-4">
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-    Crear Pelicula
-  </button>
-</div>
+
   
  
 </form>
+<div class="col-span-2 flex justify-center m-4">
+  <button @click="addMovie" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+    Crear Pelicula
+  </button>
+</div>
         
   </div>
   </div>

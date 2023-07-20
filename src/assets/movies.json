@@ -14,7 +14,7 @@
 		}
 	],
 	"date":"Fri Jun 03 2023 19:00:00 GMT-0500 (hora estándar de Colombia)",
-	"rating": 9.2,
+	"rating": 3.2,
 	"image": "shawnshank.jpg",
 	"trailer": "https://www.youtube.com/watch?v=NmzuHjWmXOc"
 }, {
@@ -36,7 +36,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 9.2,
+	"rating": 4.8,
 	"date":"2023-07-2023",
 	"image": "godfather.jpg",
 	"trailer": "https://www.youtube.com/watch?v=UaVTIH8mujA"
@@ -60,7 +60,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 9,
+	"rating": 5,
 	"image": "dark.jpg",
 	"trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
 }, {
@@ -82,7 +82,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 8.9,
+	"rating": 3.9,
 	"date":"2023-07-2023",
 	"image": "pulp.jpg",
 	"trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
@@ -105,7 +105,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 9,
+	"rating": 3.2,
 	"date":"2023-07-2023",
 	"image": "lord.jpg",
 	"trailer": "https://www.youtube.com/watch?v=19nt1L8nLrA"
@@ -128,7 +128,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 8.8,
+	"rating": 4.5,
 	"date":"2023-07-2023",
 	"image": "good.jpg",
 	"trailer": "https://www.youtube.com/watch?v=exJOy6uTkek"
@@ -151,7 +151,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 8.8,
+	"rating": 4.3,
 	"date":"2023-07-2023",
 	"image": "club.jpg",
 	"trailer": "https://www.youtube.com/watch?v=YD5BeUWgsSM"
@@ -174,7 +174,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 8.8,
+	"rating": 4.1,
 	"date":"2023-07-2023",
 	"image": "fellow.jpg",
 	"trailer": "https://www.youtube.com/watch?v=3GJp6p_mgPo"
@@ -197,7 +197,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 8.8,
+	"rating": 4.5,
 	"date":"2023-07-2023",
 	"image": "gump.jpg",
 	"trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg"
@@ -220,7 +220,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 8.8,
+	"rating": 4.3,
 	"date":"2023-07-2023",
 	"image": "inception.jpg",
 	"trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
@@ -244,7 +244,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 9.0,
+	"rating": 4.4,
 	"image": "barbie.jpg",
 	"date":"Fri Jul 20 2023 19:00:00 GMT-0500 (hora estándar de Colombia)",
 	"trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
@@ -268,7 +268,7 @@
 			"name":"terror"
 		}
 	],
-	"rating": 9.0,
+	"rating": 3,
 	"image": "open.jpg",
 	"date":"Fri Jul 20 2023 19:00:00 GMT-0500 (hora estándar de Colombia)",
 	"trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"

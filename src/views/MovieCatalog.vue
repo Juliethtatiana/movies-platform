@@ -16,7 +16,7 @@ import {
 } from '@headlessui/vue'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/20/solid'
 
-
+let movies=localStorage.getItem("data")?JSON.parse(localStorage.getItem("data")):movieData
 
 let selected = ref(movieCategories)
 let query = ref('')
@@ -36,15 +36,15 @@ let categoryList = computed(() =>
 
 
 
-const filteredList=ref(movieData)
+const filteredList=ref(movies)
 
 
 const searchbyName = (name)=>{
     const regex = new RegExp(`\\b${name.toLocaleLowerCase()}\\b`);
     if(name!=""){
-        filteredList.value = movieData.filter((movie) => regex.test(movie.name.toLocaleLowerCase()) )
+        filteredList.value = movies.filter((movie) => regex.test(movie.name.toLocaleLowerCase()) )
     }else{
-        filteredList.value = movieData
+        filteredList.value = movies
     }
 
 }
